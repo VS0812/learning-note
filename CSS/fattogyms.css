@@ -1,0 +1,52 @@
+:root {
+    /* Body：整個網頁 */
+    --body-bg-mist-blue: #EEF5F8;
+    --body-text-deep-blue: #20343D;
+
+    /* Wrapper：主要版面容器 */
+    --wrapper-bg-white: #FFFFFF;
+
+    /* Banner / Image Box：上方圖片區塊 */
+    --banner-bg-soft-blue: #BFD8E3;
+    --imgbox-bg-soft-blue: #BFD8E3;
+
+    /* Banner Title：網站主標題 */
+    --banner-title-text-deep-blue: #20343D;
+
+    /* Nav：導覽列 */
+    --nav-bg-powder-blue: #D8EAF0;
+
+    /* Nav Link：導覽按鈕一般狀態 */
+    --nav-link-bg-white: #FFFFFF;
+    --nav-link-text-deep-blue: #20343D;
+    --nav-link-icon-blue: #5D9BB3;
+    --nav-link-shadow-blue-gray: #AFC7D0;
+
+    /* Nav Link Hover：導覽按鈕滑過狀態 */
+    --nav-link-hover-bg-blue: #5D9BB3;
+    --nav-link-hover-text-white: #FFFFFF;
+    --nav-link-hover-icon-white: #FFFFFF;
+    --nav-link-hover-shadow-deep-blue: #20343D;
+
+    /* Content：主要內容區 */
+    --content-bg-white: #FFFFFF;
+    --content-border-light-blue: #D8EAF0;
+    --content-title-text-deep-blue: #20343D;
+    --content-text-blue-gray: #526D78;
+    --content-icon-blue: #5D9BB3;
+
+    /* Content Link / Button：內容按鈕一般狀態 */
+    --content-link-bg-blue: #5D9BB3;
+    --content-link-text-white: #FFFFFF;
+    --content-link-shadow-blue-gray: #AFC7D0;
+
+    /* Content Link / Button Hover：內容按鈕滑過狀態 */
+    --content-link-hover-bg-deep-blue: #20343D;
+    --content-link-hover-text-white: #FFFFFF;
+    --content-link-hover-shadow-blue-gray: #526D78;
+
+    /* Footer：頁尾 */
+    --footer-bg-deep-blue: #20343D;
+    --footer-text-white: #FFFFFF;
+    --footer-icon-soft-blue: #BFD8E3;
+}

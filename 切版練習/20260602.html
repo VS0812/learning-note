@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20260602</title>
+    <link rel="stylesheet" href="CSS/20260602.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--body-bg-linen);
+            color: var(--body-text-dark-brown);
+            /*font-family: "LXGW WenKai TC", cursive;*/
+        }
+
+        .wrapper {
+            width: 1024px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imgbox {
+            width: 1024px;
+            height: 300px;
+            background-color: var(--imgbox-bg-sand);
+            background-image: url(images/cats03.jpg);
+            background-position: center center;
+            background-size: cover;
+            margin-top: 15px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: var(--nav-bg-sand);
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            display: inline-block;
+        }
+
+        nav ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            background-color: var(--nav-link-bg-ivory);
+            color: var(--nav-link-text-dark-brown);
+            margin: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 2px var(--nav-link-shadow-coffee);
+            transition: border-radius 0.5s, box-shadow 0.5s, background-color 0.5s, color 0.5s;
+        }
+
+        nav ul li a:hover {
+            border-radius: 50px;
+            background-color: var(--nav-link-hover-bg-ocean);
+            color: var(--nav-link-hover-text-ivory);
+            box-shadow: 8px 8px 8px 2px var(--nav-link-hover-shadow-dark-brown);
+        }
+
+        nav ul li a i {
+            margin-right: 6px;
+            color: var(--nav-link-icon-ocean);
+            transition: color 0.5s;
+        }
+
+        nav ul li a:hover i {
+            color: var(--nav-link-hover-icon-sunset);
+        }
+
+        .content {
+            background-color: var(--content-bg-ivory);
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: "Noto Serif TC", serif;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: var(--content-title-dark-brown);
+            padding-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 24px;
+            color: var(--content-text-coffee);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .content a {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bolder;
+            color: var(--content-btn-text-ivory);
+            background-color: var(--content-btn-bg-ocean);
+            width: 150px;
+            height: 50px;
+            margin: 0 auto;
+            line-height: 50px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 2px var(--content-btn-shadow-coffee);
+            transition: border-radius 0.5s, box-shadow 0.5s, background-color 0.5s;
+        }
+
+        .content a:hover {
+            border-radius: 20px;
+            background-color: var(--content-btn-hover-bg-sunset);
+            box-shadow: 10px 10px 10px 2px var(--content-btn-hover-shadow);
+            color: var(--content-btn-hover-text);
+        }
+
+        .footer {
+            background-color: var(--footer-bg-dark-brown);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .footer p {
+            font-size: 24px;
+            color: var(--footer-text-ivory);
+            font-weight: bold;
+        }
+
+        /* RWD響應 */
+        @media screen and (max-width: 800px) and (min-width: 500px) {
+            .imgbox {
+                width: 100%;
+                background-image: url(/images/cats01.jpg);
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .wrapper {
+                width: 100%;
+            }
+
+            .imgbox {
+                width: 100%;
+                background-image: url(/images/cats02.avif);
+            }
+
+            nav ul {
+                display: block;
+                padding-left: 10px;
+                padding-top: 10px;
+                margin: 0;
+                padding-bottom: 10px;
+            }
+
+            nav ul li {
+                float: none;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                background-color: var(--content-btn-hover-bg-sunset);
+                color: var(--footer-text-ivory);
+            }
+
+            .content {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .content h1 {
+                font-size: 88px;
+            }
+
+            .content p {
+                font-size: 36px;
+                line-height: 2;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <div class="imgbox"></div>
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house btn-text-secondary"></i>首頁</a></li>
+                    <li><a href=""><i class="fa-duotone fa-solid fa-newspaper btn-text-secondary"></i>最新消息</a></li>
+                    <li><a href=""><i class="fa-duotone fa-solid fa-handshake-angle btn-text-secondary"></i>合作店家</a>
+                    </li>
+                    <li><a href=""><i class="fa-brands fa-readme btn-text-secondary"></i>關於我們</a></li>
+                    <li><a href=""><i class="fa-solid fa-at btn-text-secondary"></i>聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1><i class="fa-solid fa-door-open fa-2xl btn-text-primary"></i>歡迎光臨</h1>
+            <p class="fw-100">此次辛苦返回很有能源適應，方式笑容工商簽名採取歲月優勢些什麼，事件告訴你超過原本補充收到不可能用來校園另一個，錯誤當然無疑，醫生力量吃飯體內，資料組成裝置，讓。</p>
+            <p class="fw-900">
+                意味着打電話汽車體制，拿出烏日桃園筆記本主要專欄苗栗台南，異常執行嘿嘿怎麼樣逐漸由於道德宜蘭兩人沒事設備，文本設為暴力網頁班角色，困難目的已被家人，看過集中，獲取執行太麻里眼神不斷好了顯然重要，員工獨特網絡願意類別生氣法律道路衣服整合因為透露，排名語文大型垃圾經歷受傷你是共有，羅東距離，特性食品他。
+            </p>
+            <p class="fw-500">大學基本上山西原因那裡產權開口有限公司，隨意細胞社會選手行情鮮花面積高效敵人手冊選擇台南及時，你是。</p>
+            <a href="#"><i class="fa-solid fa-book-open btn-text-primary"></i>了解更多</a>
+        </div>
+
+        <div class="footer">
+            <p>Powered by Vicky 2026.05</p>
+        </div>
+    </div>
+</body>
+
+</html>

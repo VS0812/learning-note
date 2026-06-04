@@ -1,0 +1,94 @@
+/* 字型一律放最上面 */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+
+:root {
+    /* Body：整個網頁 */
+    --body-bg-linen: #F3EBDD;
+    --body-text-dark-brown: #2B160F;
+
+    /* Banner / Image Box */
+    --imgbox-bg-sand: #D9A66A;
+
+    /* Nav：導覽列 */
+    --nav-bg-sand: #D9A66A;
+
+    /* Nav Link：導覽按鈕一般狀態 */
+    --nav-link-bg-ivory: #FFF9EF;
+    --nav-link-text-dark-brown: #2B160F;
+    --nav-link-icon-ocean: #2F7F8F;
+    --nav-link-shadow-coffee: #6B4A3A;
+
+    /* Nav Link Hover：導覽按鈕滑過狀態 */
+    --nav-link-hover-bg-ocean: #2F7F8F;
+    --nav-link-hover-text-ivory: #FFF9EF;
+    --nav-link-hover-icon-sunset: #E76F3C;
+    --nav-link-hover-shadow-dark-brown: #2B160F;
+
+    /* Content：主要內容區 */
+    --content-bg-ivory: #FFF9EF;
+    --content-border-mist: #D8C7B0;
+    --content-main-icon-ocean: #2f618f;
+    --content-title-dark-brown: #2B160F;
+    --content-text-coffee: #6B4A3A;
+
+    /* Content Button：了解更多按鈕 */
+    --content-btn-bg-ocean: #2F7F8F;
+    --content-btn-text-ivory: #FFF9EF;
+    --content-btn-shadow-coffee: #6B4A3A;
+
+    /* Content Button Hover：了解更多按鈕滑過狀態 */
+    --content-btn-hover-bg-sunset: #E76F3C;
+    --content-btn-hover-text: #fffbab;
+    --content-btn-hover-shadow: #882164;
+
+    /* Footer：頁尾 */
+    --footer-bg-dark-brown: #2B160F;
+    --footer-text-ivory: #FFF9EF;
+}
+
+/*字體粗細*/
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/*字體顏色*/
+.btn-text-primary {
+    color: var(--content-main-icon-ocean);
+}
+
+.btn-text-secondary {
+    color: var(--nav-link-icon-ocean);
+}
