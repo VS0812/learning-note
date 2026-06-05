@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch5 表格（table）</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/20260602.css">
+    <style>
+        @media screen and (max-width:768px) {
+
+            .table-rwd thead,
+            caption {
+                display: none;
+            }
+
+            .table-rwd tbody tr {
+                display: block;
+                margin-top: 15px;
+                border: 2px solid var(--nav-link-text-dark-brown);
+                border-radius: 10px;
+            }
+
+            .table-rwd tbody tr td {
+                display: block;
+                /* 避免跑版 */
+                overflow: hidden;
+            }
+
+            .table-rwd tbody tr td::before {
+                /* 偽元素 */
+                /* content: "OOOOOOOOO"; */
+                content: attr(data-th)":";
+                font-size: 22px;
+                font-weight: bold;
+                color: var(--content-btn-hover-shadow);
+                display: block;
+                float: left;
+                width: 30%;
+                text-align: right;
+                padding-right: 1em;
+            }
+
+            .table-rwd tbody tr td span {
+                display: block;
+                float: left;
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-3 fw-900 text-center">產品列表</div>
+        <table class="table mt-3 table-bordered table-hover table-striped table-rwd">
+            <caption>表1.2 產品列表</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>產品編號</th>
+                    <th>產品名稱</th>
+                    <th>產品價格</th>
+                    <th>產品數量</th>
+                    <th>產品備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-warning">
+                    <td data-th="產品編號"><span>001</span></td>
+                    <td data-th="產品名稱"><span>焦糖瑪其朵</span></td>
+                    <td data-th="產品價格"><span>$70</span></td>
+                    <td data-th="產品數量"><span>10</span></td>
+                    <td data-th="產品備註"><span>少冰
+                            就好發展一生角色高考，手術工程師採訪公司主機財務森林多少少女下了魔法常常，結構寫真受到威望一起定義申請演唱部隊不是很那位大連接口認真，課程不敢都不長大嘗試推進一生成了眼神快速讓他醫療，統計我覺得，過。</span>
+                    </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>002</td>
+                    <td>美式咖啡</td>
+                    <td>$45</td>
+                    <td>8</td>
+                    <td>正常</td>
+                </tr>
+                <tr>
+                    <td class="bg-success">003</td>
+                    <td>摩卡咖啡</td>
+                    <td>$60</td>
+                    <td>3</td>
+                    <td>三分糖</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../Javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

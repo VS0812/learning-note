@@ -1,0 +1,69 @@
+:root {
+    /* Body：整個網頁 */
+    --body-bg: #F5F7FA;
+    --body-text: #1F2937;
+
+    /* Section 01：首頁 Hero 區塊 */
+    --hero-bg: #F5F7FA;
+    --hero-card-bg: #FFFFFF;
+    --hero-border: #DDE3EA;
+    --hero-shadow: rgba(31, 41, 55, 0.16);
+
+    /* 四角裝飾方塊 */
+    --corner-box-bg: #D9EEF7;
+    --corner-box-bg-secondary: #E8F3EC;
+
+    /* 個人照片區塊 */
+    --user-img-bg: #EAF2F8;
+    --user-img-border: #FFFFFF;
+    --user-img-shadow: rgba(15, 23, 42, 0.22);
+
+    /* 個人文字區塊 */
+    --user-text-bg: rgba(255, 255, 255, 0.88);
+    --user-name-text: #0F172A;
+    --user-title-text: #2563EB;
+    --user-desc-text: #4B5563;
+    --user-divider: #CBD5E1;
+
+    /* Section 02：作品集區塊 */
+    --portfolio-bg: #EEF5F8;
+    --portfolio-title-text: #0F172A;
+
+    /* 作品卡片 */
+    --card-bg: #FFFFFF;
+    --card-border: #D8E2EA;
+    --card-shadow: rgba(15, 23, 42, 0.12);
+    --card-title-text: #1E3A8A;
+    --card-desc-text: #475569;
+
+    /* 按鈕 / 連結 */
+    --link-bg: #2563EB;
+    --link-text: #FFFFFF;
+    --link-border: #2563EB;
+    --link-hover-bg: #1D4ED8;
+    --link-hover-text: #FFFFFF;
+    --link-hover-border: #1D4ED8;
+
+    /* Icon */
+    --icon-color: #2563EB;
+    --icon-hover-color: #1D4ED8;
+
+    /* Navbar：之後如果新增導覽列可使用 */
+    --nav-bg: rgba(255, 255, 255, 0.9);
+    --nav-text: #334155;
+    --nav-hover-text: #2563EB;
+    --nav-active-text: #1D4ED8;
+
+    /* Footer：之後如果新增頁尾可使用 */
+    --footer-bg: #0F172A;
+    --footer-text: #CBD5E1;
+    --footer-link-text: #93C5FD;
+    --footer-link-hover-text: #FFFFFF;
+
+    /* 表單：之後如果新增 Contact 區塊可使用 */
+    --input-bg: #FFFFFF;
+    --input-text: #1F2937;
+    --input-border: #CBD5E1;
+    --input-focus-border: #2563EB;
+    --input-placeholder: #94A3B8;
+}

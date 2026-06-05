@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人首頁</title>
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/20260602userpage.css">
+    <style>
+        body {
+            background-color: var(--body-bg);
+        }
+
+        .s01 {
+            background-color: var(--hero-bg);
+            height: 100vh;
+            position: relative;
+        }
+
+        .s01 .box01 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .s01 .box02 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .s01 .box03 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .s01 .box04 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .s01 .userImg {
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+            left: 100px;
+            right: 100px;
+            background-color: var(--user-img-bg);
+            background-image: url(/images/selfie.jpg);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px var(--user-img-shadow);
+            margin-bottom: 10px;
+
+        }
+
+        .userText {
+            position: absolute;
+            top: 85%;
+            left: 20%;
+            right: 20%;
+            color: var(--user-title-text);
+            background-color: var(--user-text-bg);
+        }
+
+        .s02 {
+            background-color: var(--portfolio-bg);
+            position: relative;
+            margin-top: 300px;
+            text-align: center;
+        }
+
+        .s02 h2 {
+            font-size: 36px;
+            padding-top: 10px;
+        }
+
+        .s02 .card {
+            display: inline-block;
+            margin: 15px;
+            width: 240px;
+            background-color: blueviolet;
+            padding: 20px;
+            text-align: left;
+            border-radius: 15px;
+        }
+
+        .s02 .card h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .s02 .card p {
+            color: brown;
+            line-height: 1.5;
+            padding-bottom: 10px;
+        }
+
+        .s02 .card a {
+            background-color: #fff;
+            text-decoration: none;
+            padding: 10px 10px;
+            border-radius: 20px;
+            color: ;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s01">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+        <div class="userImg"></div>
+        <div class="userText">
+            <h1>Vicky</h1>
+            <hr>
+            <h2>應徵職位：軟體工程師</h2>
+            <p>座右銘：年度打造但我街道一個月一定改造渠道長沙電子，危險戰鬥很容易經銷商北方教學殺手現代，降低會有風情出現在制定團結隊伍熱點英雄論壇吃螺絲信譽，身體警察本書反正上傳生命，花蓮素質需要有限責任公司輸出資源第二，最大部落另一肯定全部正常文明能量轉移每次人口考察，總部。
+            </p>
+        </div>
+    </section>
+    <section class="s02">
+        <h2>作品集</h2>
+
+        <!-- 作品01 -->
+        <div class="card">
+            <h3>切版練習</h3>
+            
+            <p>使用html、CSS練習切版</p>
+            <a href="/切版練習/20260602.html" target="_blank">查看作品</a>
+        </div>
+        <!-- 作品02 -->
+        <div class="card">
+            <h3>文字變化</h3>
+            <h5>2026.06.05</h5>
+            <p>使用HTML、CSS、Bootstrap進行文字變化練習<br>
+                This project is a sipmle word changing excercise built with HTML, CSS and Bootstrap.
+            </p>
+            <a href="../Bootsrap/20260605-ch3-ch4.html" target="_blank">查看作品</a>
+        </div>
+    </section>
+</body>
+
+</html>

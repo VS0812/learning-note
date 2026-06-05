@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>畫畫森林 Art Forest</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .15);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .navbar-brand i {
+            color: #ffc107;
+            margin-right: 8px;
+        }
+
+        .container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all .3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .18);
+        }
+
+        .card-img-top {
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            color: #ff7a00;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .card-text {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #343a40;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer .nav-link {
+            color: #f8f9fa;
+        }
+
+        footer .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .dropdown-item:hover {
+            background-color: #fff3cd;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-palette"></i>
+                畫畫森林 Art Forest
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-house"></i>
+                            首頁
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-circle-info"></i>
+                            品牌故事
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            繪畫課程
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">兒童創意繪畫</a></li>
+                            <li><a class="dropdown-item" href="#">水彩入門課程</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">數位插畫設計</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">學員作品（建置中）</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="搜尋課程" aria-label="Search">
+                    <button class="btn btn-outline-warning text-nowrap" type="submit">搜尋</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+            <div class="col">
+                <div class="card">
+                    <img src="../images/tile01.jpg" class="card-img-top" alt="兒童創意繪畫">
+                    <div class="card-body">
+                        <h5 class="card-title">兒童創意繪畫</h5>
+                        <p class="card-text">
+                            透過有趣的主題創作與色彩遊戲，引導孩子培養觀察力、想像力與藝術表達能力，
+                            讓每一次下筆都充滿創意與自信。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../images/tile02.jpg" class="card-img-top" alt="水彩基礎入門">
+                    <div class="card-body">
+                        <h5 class="card-title">水彩基礎入門</h5>
+                        <p class="card-text">
+                            從色彩認識到暈染技巧，循序漸進學習水彩表現方式，
+                            建立扎實基礎並享受創作帶來的樂趣。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../images/tile03.jpg" class="card-img-top" alt="角色插畫設計">
+                    <div class="card-body">
+                        <h5 class="card-title">角色插畫設計</h5>
+                        <p class="card-text">
+                            學習人物比例、表情設計與角色塑造技巧，
+                            創造獨一無二的原創角色，打造屬於自己的故事世界。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="../images/tile04.jpg" class="card-img-top" alt="數位繪圖創作">
+                    <div class="card-body">
+                        <h5 class="card-title">數位繪圖創作</h5>
+                        <p class="card-text">
+                            結合平板與繪圖軟體應用，掌握現代數位插畫技巧，
+                            將靈感轉化為專業且富有個人風格的作品。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link disabled">
+                    © 畫畫森林 Art Forest 2026
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    課程資訊
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link">
+                    招生中
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../Javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

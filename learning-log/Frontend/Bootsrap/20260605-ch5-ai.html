@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP 商品管理系統</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/20260602.css">
+
+    <style>
+        :root {
+            --erp-primary: #1f2937;
+            --erp-secondary: #374151;
+            --erp-bg: #f4f6f9;
+            --erp-success: #198754;
+            --erp-danger: #dc3545;
+            --erp-warning: #ffc107;
+            --erp-info: #0dcaf0;
+        }
+
+        body {
+            background-color: var(--erp-bg);
+        }
+
+        .erp-title {
+            color: var(--erp-primary);
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+        .erp-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+            text-align: center;
+            transition: .3s;
+        }
+
+        .erp-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .erp-card .number {
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        .erp-card .text {
+            color: #666;
+        }
+
+        .erp-toolbar {
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+        }
+
+        .erp-table {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+        }
+
+        .badge-status {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .status-hot {
+            background: #dc3545;
+        }
+
+        .status-normal {
+            background: #198754;
+        }
+
+        .status-low {
+            background: #fd7e14;
+        }
+
+        .status-stop {
+            background: #6c757d;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .table-rwd thead,
+            caption {
+                display: none;
+            }
+
+            .table-rwd tbody tr {
+                display: block;
+                margin-top: 15px;
+                border: 2px solid #dee2e6;
+                border-radius: 10px;
+                background-color: #fff;
+            }
+
+            .table-rwd tbody tr td {
+                display: block;
+                overflow: hidden;
+            }
+
+            .table-rwd tbody tr td::before {
+                content: attr(data-th) ":";
+                font-size: 18px;
+                font-weight: bold;
+                color: #0d6efd;
+                display: block;
+                float: left;
+                width: 35%;
+                text-align: right;
+                padding-right: 1em;
+            }
+
+            .table-rwd tbody tr td span {
+                display: block;
+                float: left;
+                width: 65%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+        <div class="display-4 text-center erp-title mb-4">
+            ERP 商品管理系統
+        </div>
+
+        <div class="row mb-4">
+
+            <div class="col-md-3 mb-3">
+                <div class="erp-card">
+                    <div class="number text-primary">10</div>
+                    <div class="text">商品總數</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="erp-card">
+                    <div class="number text-success">168</div>
+                    <div class="text">今日銷售</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="erp-card">
+                    <div class="number text-warning">2</div>
+                    <div class="text">低庫存商品</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="erp-card">
+                    <div class="number text-danger">1</div>
+                    <div class="text">停售商品</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="erp-toolbar">
+            <button class="btn btn-success">
+                <i class="fa-solid fa-plus"></i>
+                新增商品
+            </button>
+
+            <button class="btn btn-primary">
+                <i class="fa-solid fa-file-export"></i>
+                匯出 Excel
+            </button>
+        </div>
+
+        <table class="table table-bordered table-hover table-striped table-rwd erp-table">
+
+            <caption>ERP 商品管理列表</caption>
+
+            <thead class="table-dark">
+                <tr>
+                    <th>產品編號</th>
+                    <th>產品名稱</th>
+                    <th>產品價格</th>
+                    <th>產品數量</th>
+                    <th>產品備註</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA001</span></td>
+                    <td data-th="產品名稱"><span>珍珠奶茶</span></td>
+                    <td data-th="產品價格"><span>$65</span></td>
+                    <td data-th="產品數量"><span>58</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-hot">熱銷商品</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA002</span></td>
+                    <td data-th="產品名稱"><span>四季春青茶</span></td>
+                    <td data-th="產品價格"><span>$35</span></td>
+                    <td data-th="產品數量"><span>42</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-normal">正常供應</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA003</span></td>
+                    <td data-th="產品名稱"><span>烏龍綠茶</span></td>
+                    <td data-th="產品價格"><span>$40</span></td>
+                    <td data-th="產品數量"><span>36</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-normal">正常供應</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA004</span></td>
+                    <td data-th="產品名稱"><span>波霸鮮奶茶</span></td>
+                    <td data-th="產品價格"><span>$75</span></td>
+                    <td data-th="產品數量"><span>15</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-hot">人氣推薦</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA005</span></td>
+                    <td data-th="產品名稱"><span>百香綠茶</span></td>
+                    <td data-th="產品價格"><span>$50</span></td>
+                    <td data-th="產品數量"><span>26</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-normal">正常供應</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA006</span></td>
+                    <td data-th="產品名稱"><span>冬瓜檸檬</span></td>
+                    <td data-th="產品價格"><span>$55</span></td>
+                    <td data-th="產品數量"><span>18</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-normal">正常供應</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA007</span></td>
+                    <td data-th="產品名稱"><span>蜂蜜綠茶</span></td>
+                    <td data-th="產品價格"><span>$60</span></td>
+                    <td data-th="產品數量"><span>7</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-low">低庫存</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA008</span></td>
+                    <td data-th="產品名稱"><span>桂花烏龍</span></td>
+                    <td data-th="產品價格"><span>$65</span></td>
+                    <td data-th="產品數量"><span>5</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-low">低庫存</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA009</span></td>
+                    <td data-th="產品名稱"><span>芋頭鮮奶</span></td>
+                    <td data-th="產品價格"><span>$85</span></td>
+                    <td data-th="產品數量"><span>12</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-normal">正常供應</span></span></td>
+                </tr>
+
+                <tr>
+                    <td data-th="產品編號"><span>TEA010</span></td>
+                    <td data-th="產品名稱"><span>楊枝甘露</span></td>
+                    <td data-th="產品價格"><span>$95</span></td>
+                    <td data-th="產品數量"><span>0</span></td>
+                    <td data-th="產品備註"><span><span class="badge-status status-stop">停售商品</span></span></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="../Javascript/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

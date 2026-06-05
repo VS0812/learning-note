@@ -1,83 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人首頁</title>
-    <link rel="stylesheet" href="/CSS/all.min.css">
-    <link rel="stylesheet" href="/CSS/20260602userpage.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SHIH HUEI YU</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
     <style>
-        :root {
-            /* Body：整個網頁 */
-            --body-bg: #F5F7FA;
-            --body-text: #1F2937;
-
-            /* Section 01：首頁 Hero 區塊 */
-            --hero-bg: #F5F7FA;
-            --hero-card-bg: #FFFFFF;
-            --hero-border: #DDE3EA;
-            --hero-shadow: rgba(31, 41, 55, 0.16);
-
-            /* 四角裝飾方塊 */
-            --corner-box-bg: #D9EEF7;
-            --corner-box-bg-secondary: #E8F3EC;
-
-            /* 個人照片區塊 */
-            --user-img-bg: #EAF2F8;
-            --user-img-border: #FFFFFF;
-            --user-img-shadow: rgba(15, 23, 42, 0.22);
-
-            /* 個人文字區塊 */
-            --user-text-bg: rgba(255, 255, 255, 0.88);
-            --user-name-text: #0F172A;
-            --user-title-text: #2563EB;
-            --user-desc-text: #4B5563;
-            --user-divider: #CBD5E1;
-
-            /* Section 02：作品集區塊 */
-            --portfolio-bg: #EEF5F8;
-            --portfolio-title-text: #0F172A;
-
-            /* 作品卡片 */
-            --card-bg: #FFFFFF;
-            --card-border: #D8E2EA;
-            --card-shadow: rgba(15, 23, 42, 0.12);
-            --card-title-text: #1E3A8A;
-            --card-desc-text: #475569;
-
-            /* 按鈕 / 連結 */
-            --link-bg: #2563EB;
-            --link-text: #FFFFFF;
-            --link-border: #2563EB;
-            --link-hover-bg: #1D4ED8;
-            --link-hover-text: #FFFFFF;
-            --link-hover-border: #1D4ED8;
-
-            /* Icon */
-            --icon-color: #2563EB;
-            --icon-hover-color: #1D4ED8;
-
-            /* Navbar：之後如果新增導覽列可使用 */
-            --nav-bg: rgba(255, 255, 255, 0.9);
-            --nav-text: #334155;
-            --nav-hover-text: #2563EB;
-            --nav-active-text: #1D4ED8;
-
-            /* Footer：之後如果新增頁尾可使用 */
-            --footer-bg: #0F172A;
-            --footer-text: #CBD5E1;
-            --footer-link-text: #93C5FD;
-            --footer-link-hover-text: #FFFFFF;
-
-            /* 表單：之後如果新增 Contact 區塊可使用 */
-            --input-bg: #FFFFFF;
-            --input-text: #1F2937;
-            --input-border: #CBD5E1;
-            --input-focus-border: #2563EB;
-            --input-placeholder: #94A3B8;
-        }
-
         body {
             background-color: var(--body-bg);
         }
@@ -136,6 +66,7 @@
             background-size: cover;
             border-radius: 15px;
             box-shadow: 2px 2px 2px 2px var(--user-img-shadow);
+            margin-bottom: 10px;
 
         }
 
@@ -175,13 +106,13 @@
             margin-top: 0;
         }
 
-        .s02 .card p {
+        .card-body p {
             color: brown;
             line-height: 1.5;
             padding-bottom: 10px;
         }
 
-        .s02 .card a {
+        .card-body a {
             background-color: #fff;
             text-decoration: none;
             padding: 10px 10px;
@@ -206,22 +137,56 @@
             </p>
         </div>
     </section>
-    <section class="s02">
-        <h2>作品集</h2>
-
-        <!-- 作品01 -->
-        <div class="card">
-            <h3>切版練習</h3>
-            <p>使用html、CSS練習切版</p>
-            <a href="/切版練習/20260602.html" target="_blank">查看作品</a>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">貓咖簡易切版練習</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2026.05.27</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <a href="../切版練習/20260527-2.html" class="card-link">查看作品1</a>
+                        <a href="../切版練習/20260527-2-ai.html" class="card-link">查看作品2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- 作品02 -->
-        <div class="card">
-            <h3>切版練習</h3>
-            <p>使用html、CSS練習切版</p>
-            <a href="/切版練習/20260602.html" target="_blank">查看作品</a>
-        </div>
-    </section>
+    </div>
+    <script src="../Javascript/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
